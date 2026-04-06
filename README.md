@@ -86,6 +86,14 @@ SQL, and Machine Learning in a single Jupyter Notebook.
 ---
 
 ## 📁 Project Structure
+olist-ecommerce-analysis/
+│
+├── data/                        # Raw CSVs (gitignored — download from Kaggle)
+├── notebooks/
+│   └── olist_analysis.ipynb     # Full analysis notebook
+├── visuals/                     # All exported charts (7 PNG files)
+├── README.md
+└── requirements.txt
 
 ---
 
