@@ -56,10 +56,10 @@ SQL, and Machine Learning in a single Jupyter Notebook.
 - Peak shopping hour: **16:00 – 17:00**
 - **São Paulo** sellers generate **R$13,369,881** — dominant seller hub
 
-### ML Forecast
-- Polynomial Regression model achieves **Train R² = 0.9164**
-- Forecast: **Aug 2018** → R$1,325,952 · **Sep 2018** → R$1,364,286 · **Oct 2018** → R$1,400,392
-- Trend indicates continued month-on-month revenue growth
+### Forecast evaluation
+- A degree-2 Polynomial Regression model was trained on 16 months and evaluated on the final 3 observed months.
+- On that held-out period, the model scored **R² = −14.394**, with **MAE = R$185,932** and **RMSE = R$203,858**. This indicates very poor out-of-sample fit; the forecast should not be treated as a reliable business prediction.
+- The notebook still generates illustrative estimates for **Aug 2018** (R$1,325,952), **Sep 2018** (R$1,364,286), and **Oct 2018** (R$1,400,392) to demonstrate forecast evaluation and visualization.
 
 ---
 
@@ -80,7 +80,10 @@ SQL, and Machine Learning in a single Jupyter Notebook.
 **Review Score Distribution**
 ![Reviews](visuals/05_review_distribution.png)
 
-**Revenue Forecast — Next 3 Months**
+**Delivery Time Distribution**
+![Delivery time distribution](visuals/06_delivery_distribution.png)
+
+**Revenue Forecast — Next 3 Months (Illustrative)**
 ![Forecast](visuals/07_revenue_forecast.png)
 
 ---
